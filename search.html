@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Search avto</title>
+    <style>
+        h1 {text-align: center;}
+    </style>
+</head>
+<body>
+<h2>ПОИСК АВТО</h2>
+
+<img src="./img/avto4.jpg" alt="test" class="img">
+<form action="https://fom.in.ua/echo">
+    <label for="body">Тип кузова:</label>
+    <select name="body" id="body">
+        <option value="sedan">Седан</option>
+        <option value="hatchback">Хетчбек</option>
+        <option value="crossover">Кросовер</option>
+        <option value="coupe">Купе</option>
+        <option value="cabriolet">Кабриолет</option>
+    </select>
+    <div>
+        <label for="brand">Марка авто:</label>
+        <select name="brand" id="brand">
+            <option value="BMW">BMW</option>
+            <option value="Honda">Honda</option>
+            <option value="Kia">Kia</option>
+            <option value="Lexus">Lexus</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Toyota">Toyota</option>
+        </select>
+    </div>
+    <div>
+        <label for="country">Производитель:</label>
+        <select name="country" id="country">
+            <option value="Germany">Германия</option>
+            <option value="France">Франция</option>
+            <option value="USA">США</option>
+            <option value="China">Китай</option>
+        </select>
+    </div>
+    <label for="price">
+        Цена:
+    </label>
+    от <input id="price" type="text" name="min_price" value="3000">
+    до <label>
+    <input type="text" name="max_price" value="25000">
+</label>
+    <div>
+        <label for="year">
+            Год выпуска:
+        </label>
+        от <input id="year" type="text" name="min_year" value="1995">
+        до <label>
+        <input type="text" name="max_year" value="2022">
+    </label>
+
+        <label>Состояние:
+            <select multiple name="state">
+                <option value="broken">Битая</option>
+                <option value="on_credit">В кредит</option>
+                <option value="duty_free">Нерастаможенная</option>
+                <option value="not_damaged">Новая</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <label for="fuel">Тип топлива</label>
+        <select name="fuel" id="fuel">
+            <option value="petrol">Бензин</option>
+            <option value="diesel">Дизель</option>
+            <option value="gas">Газ</option>
+            <option value="electro">Електро</option>
+        </select>
+    </div>
+    <div>
+        <label for="transmission">Тип коробки передач:</label>
+        <select name="transmission" id="transmission">
+            <option value="manual/mechanics">Механическая</option>
+            <option value="machine">Автоматическая</option>
+        </select>
+    </div>
+    <div>
+        <label for="colour">Цвет:</label>
+        <select name="colour" id="colour">
+            <option value="red">Красная</option>
+            <option value="blue">Синяя</option>
+            <option value="black">Чорная</option>
+            <option value="green">Зеленая</option>
+        </select>
+    </div>
+    <div>
+        <label for="comfort">Комфорт:</label>
+        <select name="comfort" id="comfort">
+            <option value="seat_heating">Кожаный салон</option>
+            <option value="luke">Люк</option>
+            <option value="leather_interior">Круиз контроль</option>
+            <option value="air_conditioning">Кондиционер</option>
+        </select>
+    </div>
+    <input type="submit" value="Поиск">
+</form>
+</body>
+</html>
